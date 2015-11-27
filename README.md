@@ -2,7 +2,7 @@ Code for obtaining results described in the following paper:
 
 > Grimm R., Cassani, G., Daelemans W., & Gillis S.. (2015). Towards a Model of Prediction-based Syntactic Category Acquisition: First Steps with Word Embeddings. Sixth Workshop on Cognitive Aspects of Computational Language Learning (CogACLL 2015), 28—32
 
-Link: http://www.emnlp2015.org/proceedings/CogACLL/pdf/CogACLL05.pdf
+http://www.aclweb.org/anthology/W/W15/W15-24.pdf#page=40
 
 
 
