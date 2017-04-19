@@ -1,8 +1,6 @@
-Code for obtaining results described in the following paper: 
+Code for obtaining results described in the following [paper](http://www.aclweb.org/anthology/W/W15/W15-24.pdf#page=40): 
 
 > Grimm R., Cassani, G., Daelemans W., & Gillis S.. (2015). Towards a Model of Prediction-based Syntactic Category Acquisition: First Steps with Word Embeddings. Sixth Workshop on Cognitive Aspects of Computational Language Learning (CogACLL 2015), 28—32
-
-http://www.aclweb.org/anthology/W/W15/W15-24.pdf#page=40
 
 
 
@@ -22,10 +20,10 @@ Theano (0.7.0)
 
 #### Prepare the CHILDES corpora 
 
-Get the North American corpora from: http://childes.psy.cmu.edu/data-xml/Eng-NA-MOR/  
+Get the North American corpora [here](http://childes.psy.cmu.edu/data-xml/Eng-NA-MOR/).  
 Then unzip them to: pred_syntactic/CHILDES/Corpora/ENG-NA/
 
-Similarly, get the British English corpora from: http://childes.psy.cmu.edu/data-xml/Eng-UK-MOR/  
+Similarly, get the British English corpora [here](http://childes.psy.cmu.edu/data-xml/Eng-UK-MOR/).   
 Unzip them to: pred_syntactic/CHILDES/Corpora/ENG-UK/
 
 Download the following North American corpora:
@@ -41,7 +39,7 @@ This will read and process the corpus data, then pickle it to a dictionary for f
 
 #### Prepare the phonological data 
 
-Phonological features are based on phonemic data from the CELEX database (http://wwwlands2.let.kun.nl/members/software/celex.html -- the CD-ROM release 2 was used during development, but it will probably also work with release 1).
+Phonological features are based on phonemic data from the [CELEX database](http://wwwlands2.let.kun.nl/members/software/celex.html) (we used the CD-ROM release 2, but it will probably also work with release 1).
 
 You need to buy a license to be able to use CELEX legally. If you do not have access to the database, you can still run the experiments that do not depend on phonological features.
 
@@ -65,7 +63,7 @@ previous step to maximize the probability of each right-context word given the l
 
 Results are saved to pred_syntactic\results. Precision, recall, micro and macro F1 scores at each training stage are written to pred_syntactic\results\results_over_training_stages. A number of additional metrics are stored (plots of training error over epochs and micro F1 over epochs; T-SNE plots of word embeddings represented as dots colored by syntactic type; T-SNE plots of word embeddings represented as orthographic word forms). 
 
-To compute statistical significance of differences between performance from different training stages, donwload the approximate randomization testing script from: http://www.clips.ua.ac.be/scripts/art
+To compute statistical significance of differences between performance from different training stages, donwload the approximate randomization testing script [here](http://www.clips.ua.ac.be/scripts/art)
 
 Then run it on the outputs from each training stage -- these are saved to pred_syntactic\results\predictions
 
